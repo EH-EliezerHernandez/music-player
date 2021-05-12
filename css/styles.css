@@ -1,0 +1,113 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    background-color: #252c34;
+    color: white;
+}
+
+p,
+figure {
+    margin: 0;
+}
+
+.player {
+    display: grid;
+    grid-template-rows: 60px 400px repeat(2, auto);
+    grid-template-columns: 100%;
+}
+
+.player__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player__header-text {
+    font-size: 20px;
+}
+
+.player_cards-contenido {
+    padding: 20px 0;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+}
+
+.player__cards {
+    white-space: nowrap;
+    padding: 0 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    transform: translate(-50%, 0);
+    scroll-snap-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card:first-of-type {
+    margin-left: 50vw;
+}
+
+.card__imagen {
+    height: 100%;
+    width: 100%;
+}
+
+.player__progress-bar {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.player__music-tittle {
+    font-size: 28px;
+}
+
+.player__music-band {
+    font-size: 14px;
+}
+
+::-webkit-progress-bar {
+    height: 2px;
+}
+
+.progress-bar {
+    position: relative;
+    height: 8px;
+    width: 250px;
+}
+
+.progress-bar:before {
+    content: '3:30';
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    font-size: 14px;
+}
+
+.progress-bar:after {
+    content: '2:31';
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    font-size: 14px;
+}
