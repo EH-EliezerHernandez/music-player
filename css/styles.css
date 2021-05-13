@@ -12,8 +12,11 @@ html {
 body {
     font-size: 1.6rem;
     font-family: 'Lato', sans-serif;
-    background-color: #252c34;
+    background-color: #18191e;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     color: white;
+    height: 100vh;
 }
 
 p,
@@ -23,7 +26,7 @@ figure {
 
 .player {
     display: grid;
-    grid-template-rows: 60px 400px repeat(2, auto);
+    grid-template-rows: 60px 360px repeat(2, auto);
     grid-template-columns: 100%;
 }
 
@@ -38,16 +41,18 @@ figure {
 }
 
 .player_cards-contenido {
+    height: 500px;
     padding: 20px 0;
-    overscroll-behavior-x: contain;
     scroll-snap-type: x mandatory;
-    overflow-x: auto;
+    overflow: auto;
+    white-space: nowrap;
 }
 
-.player__cards {
-    white-space: nowrap;
+
+/* .player__cards {
+    width: max-content;
     padding: 0 20px;
-}
+} */
 
 ::-webkit-scrollbar {
     display: none;
@@ -58,14 +63,17 @@ figure {
     height: 200px;
     width: 200px;
     margin-right: 20px;
-    transform: translate(-50%, 0);
     scroll-snap-align: center;
     border-radius: 50%;
     overflow: hidden;
 }
 
 .card:first-of-type {
-    margin-left: 50vw;
+    margin-left: 43vw;
+}
+
+.card:last-of-type {
+    margin-right: 43vw;
 }
 
 .card__imagen {
@@ -110,4 +118,41 @@ figure {
     right: 0;
     bottom: -25px;
     font-size: 14px;
+}
+
+.player__buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.buttton {
+    position: relative;
+    flex: 0 0 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #282623;
+    border: none;
+    box-shadow: 35px 35px 69px #19181d, -35px -35px 69px #29282f;
+    background-image: radial-gradient(circle at 56.16% 120.44%, #253a3f 0, #223337 12.5%, #1e2a2c 25%, #181e1e 37.5%, #0f0d0d 50%, #000000 62.5%, #000000 75%, #000000 87.5%, #000000 100%);
+}
+
+.button--big {
+    flex: 0 0 80px;
+    height: 80px;
+}
+
+.button__icono {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #b307ab;
 }

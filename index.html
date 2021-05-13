@@ -20,17 +20,17 @@
         </header>
         <section class="player__card-conteiner">
             <div class="player_cards-contenido">
-                <div class="player__cards">
-                    <figure class="card">
-                        <img class="card__imagen" src="./assest/img/paramore.jpg" alt="Imagen del album de paramore">
-                    </figure>
-                    <figure class="card">
-                        <img class="card__imagen" src="./assest/img/acdc.jpg" alt="Imagen del album de ACDC">
-                    </figure>
-                    <figure class="card">
-                        <img class="card__imagen" src="./assest/img/kiss.jpg" alt="Imagen del album de KISS">
-                    </figure>
-                </div>
+                <!--    <div class="player__cards"> -->
+                <figure class="card">
+                    <img class="card__imagen" src="./assest/img/paramore.jpg" alt="Imagen del album de paramore">
+                </figure>
+                <figure class="card">
+                    <img class="card__imagen" src="./assest/img/acdc.jpg" alt="Imagen del album de ACDC">
+                </figure>
+                <figure class="card">
+                    <img class="card__imagen" src="./assest/img/kiss.jpg" alt="Imagen del album de KISS">
+                </figure>
+                <!-- </div> -->
             </div>
             <div class="player__progress-bar">
                 <p class="player__music-tittle">Shoot to Thrill</p>
@@ -39,14 +39,24 @@
             </div>
         </section>
         <footer class="player__buttons">
-            <button class="player__buttton player__buttton--replay">
+            <button class="buttton">
+                <i class="fas fa-reply button__icono button__icono--replay"></i>
             </button>
-            <button class="player__buttton player__buttton--back"></button>
-            <button class="player__buttton player__buttton--play"></button>
-            <button class="player__buttton player__buttton--next"></button>
-            <button class="player__buttton player__buttton--favorite"></button>
+            <button class="buttton">
+                <i class="fas fa-backward button__icono button__icono--back"></i>
+            </button>
+            <button class="buttton button--big ">
+                <i class="fas fa-play button__icono button__icono--play"></i>
+            </button>
+            <button class="buttton">
+                <i class="fas fa-forward button__icono button__icono--next"></i>
+            </button>
+            <button class="buttton">
+                <i class="fas fa-star button__icono button__icono--favorite"></i>
+            </button>
         </footer>
     </div>
+    <script src="https://kit.fontawesome.com/d9b5e74022.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
