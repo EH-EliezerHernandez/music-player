@@ -41,7 +41,6 @@ figure {
 }
 
 .player_cards-contenido {
-    height: 500px;
     padding: 20px 0;
     scroll-snap-type: x mandatory;
     overflow: auto;
